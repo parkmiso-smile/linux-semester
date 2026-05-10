@@ -1,15 +1,15 @@
 # 2주차 — Vim 설치하기
 
-## 📌 개요
+##  개요
 
 **Vim**을 설치하고, Whitespace Steganography(공백·탭 기반 스테가노그래피) 형태의 CTF 문제를 직접 제작하였다.
 
-## 🔧 Vim 특징
+##  Vim 특징
 
 - 입력 모드·명령 모드·비주얼 모드 등 다양한 편집 모드 제공
 - `:set list` 기능: 공백·탭·줄바꿈 등 보이지 않는 문자를 시각적으로 탐지 → 스테가노그래피 분석에 핵심
 
-## ⚙️ 설치
+##  설치
 
 ```bash
 sudo apt install vim
@@ -31,10 +31,6 @@ Steganography
 - [encode_flag.py](./encode_flag.py) — FLAG를 공백/탭으로 인코딩하는 스크립트
 - [problem.txt](./problem.txt) — 숨겨진 데이터가 삽입된 문제 파일
 
-### GitHub
-https://github.com/parkmiso-smile/my-own-CTF_studying-Linux
-
----
 
 ## 📖 문제 제작 과정
 
