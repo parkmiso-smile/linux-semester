@@ -28,6 +28,7 @@ Steganography
 
 ### 관련 파일
 - `poster.jpg` — 데이터가 숨겨진 이미지 파일 (별도 배포)
+<img width="158" height="215" alt="image" src="https://github.com/user-attachments/assets/21b2275d-fd27-465c-93ea-744210ee2e84" />
 
 ---
 
@@ -52,6 +53,8 @@ exiftool -Comment="password = misomiso1004" poster.jpg
 
 ```bash
 steghide info poster.jpg
+<img width="621" height="150" alt="image" src="https://github.com/user-attachments/assets/f544ec1a-f109-499c-a872-9c4bb31fe593" />
+
 # → 비밀번호 입력 요구 (아직 모름)
 ```
 
@@ -61,11 +64,15 @@ steghide info poster.jpg
 exiftool poster.jpg
 # Comment: password = misomiso1004  ← 발견!
 ```
+<img width="503" height="337" alt="image" src="https://github.com/user-attachments/assets/4b0f30fd-0810-4241-8745-45c5bb026178" />
 
 **Step 3. 숨겨진 파일 존재 확인**
+<img width="571" height="197" alt="image" src="https://github.com/user-attachments/assets/635197f4-b43f-494b-92ae-2c52e767ff46" />
 
 ```bash
 steghide info poster.jpg
+![Uploading image.png…]()
+
 # Enter passphrase: misomiso1004
 # embedded file: "secret.txt" (33 Byte, rijndael-128 cbc, compressed)
 ```
