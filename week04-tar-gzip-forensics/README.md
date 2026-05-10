@@ -93,6 +93,7 @@ case_backup/
 ```bash
 tar -tf case_backup.tar.gz
 ```
+<img width="635" height="353" alt="image" src="https://github.com/user-attachments/assets/588bb08a-a5de-43a6-ae62-23ac86e55ea2" />
 
 `secret_flag.txt`는 보이지 않지만 의심스러운 `.zip` 파일이 보인다.
 
@@ -104,6 +105,7 @@ cd case_backup/project/assets/data/tmp/.cfg/
 ls
 # hidden_payload.zip 발견
 ```
+<img width="886" height="499" alt="image" src="https://github.com/user-attachments/assets/50cb561b-9c93-4300-a2c6-407c70c45bd5" />
 
 **Step 3. ZIP 압축 해제**
 
