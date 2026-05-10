@@ -81,9 +81,11 @@ sudo python3 -m http.server 80
 ```bash
 cat /etc/bind/named.conf.local
 # club-khu.kr zone 파일 경로 확인
+<img width="869" height="158" alt="image" src="https://github.com/user-attachments/assets/5e3d39ef-c123-4b0d-9536-7125971bc74c" />
 
 cat /etc/bind/zones/db.club-khu.kr
 ```
+이 파일을 분석해서 다음과 같은 사실을 알아낸다.
 
 | 레코드 | 유형 | 데이터 | 분석 |
 |--------|------|--------|------|
@@ -96,8 +98,10 @@ cat /etc/bind/zones/db.club-khu.kr
 ```
 http://club-khu.kr → "Hacked by ??? System Breached."
 ```
+<img width="752" height="223" alt="image" src="https://github.com/user-attachments/assets/75b29df5-5bc6-4c00-bad7-cd3ad79442e8" />
 
 **Step 3. FLAG 획득**
+<img width="760" height="191" alt="image" src="https://github.com/user-attachments/assets/37e77f94-6304-45bf-b588-1556ae6840c7" />
 
 ```
 http://secret.club-khu.kr → FLAG{DNS_HIJACKING_SUCCESS}
