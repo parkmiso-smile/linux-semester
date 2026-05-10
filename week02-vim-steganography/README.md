@@ -72,6 +72,7 @@ vim problem.txt
 ```
 
 **Step 2. 숨겨진 문자 시각화**
+<img width="585" height="440" alt="image" src="https://github.com/user-attachments/assets/5ade4f0e-b6c4-443b-8ca1-6c0a138eeea1" />
 
 vim 명령 모드에서:
 ```
