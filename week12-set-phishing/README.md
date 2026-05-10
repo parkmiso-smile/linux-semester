@@ -33,6 +33,9 @@ SET 메뉴 선택 순서:
 4. **Web Templates** → 미리 만들어진 템플릿 사용
 5. **Google** 선택 → 구글 로그인 페이지 자동 복제
 
+<img width="871" height="234" alt="image" src="https://github.com/user-attachments/assets/56fd328f-3000-436a-9ca2-c24d154f2e93" />
+
+
 ### 결과 확인
 
 ```bash
@@ -40,8 +43,17 @@ ip a   # 가상머신 IP 확인 (예: 192.168.56.101)
 ```
 
 브라우저에서 `http://192.168.56.101` 접속 → 구글 로그인 페이지와 유사한 피싱 페이지 확인.
+<img width="506" height="286" alt="image" src="https://github.com/user-attachments/assets/a29f7b98-506f-4d89-ac7a-ce709f5dbee3" />
 
 ---
+이제 브라우저에 접속해보자
+http://192.168.56.101
+
+<img width="407" height="404" alt="image" src="https://github.com/user-attachments/assets/5280ec2f-aae3-4b8e-b8d2-6502235b9892" />
+구글 로그인 페이지와 거의 유사한 페이지가 뜨는 것을 확인할 수 있다. 이것과 연결할 가짜 페이지를 만든다
+sudo nano /var/www/html/fake.html
+
+
 
 ## ⚠️ 실습 한계 및 분석
 
