@@ -30,6 +30,8 @@ Crypto / Audio Forensics
 ```
 
 힌트: 문제와 함께 제공된 방송반 홍보 포스터 이미지를 분석하라.  
+<img width="314" height="447" alt="image" src="https://github.com/user-attachments/assets/da384c97-61a2-4077-be99-6d4e537f99b5" />
+
 → 동아리 회장 이름: 박미소 → `parkmiso`  
 → 이메일 `miso0422@...` → 생년월일 `0422`  
 → **비밀번호: `parkmiso0422`**
