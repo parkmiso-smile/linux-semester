@@ -91,3 +91,30 @@ SELECT * FROM users WHERE id = 4;
 ```
 attacker
 ```
+
+
+## 문제풀이 2
+
+데이터베이스를 더 편리하게 보기 위해 DBeaver를 설치한다. DBeaver는 프로그램을 실행하고 MariaDB 서버의 IP 주소, 사용자명, 비밀번호만 입력하면
+바로 접속하여 데이터베이스를 관리할 수 있다. 
+https://dbeaver.io/download/ DBeaver는 해당 사이트에서 다운로드 받는다.
+
+해당 프로그램에서 shopping_fraud.sql파일을 열면 다음과 같이 확인 가능하다.
+<img width="525" height="241" alt="image" src="https://github.com/user-attachments/assets/30f833e6-f368-42a1-ae3f-e7ce1cf2c245" />
+
+먼저 logs테이블에서 수상한 로그를 확인한다.
+<img width="707" height="229" alt="image" src="https://github.com/user-attachments/assets/00f7ef37-8458-4c6f-b736-dcd6e4942e8a" />
+SYSTEM_ALERT: Incomplete log chain detected for user_id=4 라는 로그를 확인할 수
+있다. 즉 user_id=4의 행동이 의심스럽다. 
+
+orders 테이블에서 user_id=4의 주문을 확인해보면, 30만 원짜리 Gaming Chair가 ‘paid’
+상태로 등록되어 있다. 
+<img width="758" height="255" alt="image" src="https://github.com/user-attachments/assets/c78e8896-ed61-4250-95dd-af6338364351" />
+겉보기에는 정상 결제처럼 보이지만, payments 테이블에서 order_id=4의 결제 내역을 조회
+하면 amount가 0원으로 되어 있다. 
+<img width="782" height="257" alt="image" src="https://github.com/user-attachments/assets/07b8e9be-ac18-4cbc-a55b-aeffaf1ff2df" />
+즉, 정상 결제라면 300,000원이 기록되어야 하지만 공격자가 결제 금액을 0으로 조작한 것이
+다. 
+
+이걸 주문한 사람의 id를 보면, 즉 order_id를 확인하면 4인 것을 알 수 있다. 마지막으로 users id에서 id=4의 정보를 확인한다. 
+![Uploading image.png…]()
