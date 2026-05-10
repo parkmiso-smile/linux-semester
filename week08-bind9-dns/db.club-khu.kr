@@ -1,0 +1,22 @@
+$TTL 600
+@   IN  SOA ns1.club-khu.kr. admin.club-khu.kr. (
+            2024112201  ; Serial
+            3600        ; Refresh
+            1800        ; Retry
+            604800      ; Expire
+            86400 )     ; Minimum TTL
+
+; name servers
+        IN  NS  ns1.club-khu.kr.
+
+; 정상 A 레코드 (원래)
+ns1     IN  A   203.0.113.10
+www     IN  A   203.0.113.10
+
+; 공격자가 추가한 악성 레코드
+; don't look here :)
+; flag is definitely not in a TXT record
+@       IN  A   198.51.100.66
+
+; 숨겨진 FLAG 서브도메인 (브라우저 접근용)
+secret  IN  A   127.0.0.1
