@@ -42,6 +42,7 @@ cd curl_ctf
 ```bash
 nano server.py
 ```
+<img width="866" height="311" alt="image" src="https://github.com/user-attachments/assets/1f37e7dc-37fe-46d7-9001-e0f89a1037ce" />
 
 → [server.py](./server.py) 참고
 
@@ -63,10 +64,12 @@ http://localhost:5000/
 → `Access Denied: Your browser is not allowed.`
 
 **Step 2. Chrome 개발자 도구로 User-Agent 변경**
+<img width="682" height="250" alt="image" src="https://github.com/user-attachments/assets/c35215d5-458a-40dd-a939-2641c48b3085" />
 
 - DevTools → Network 탭 → Network conditions
 - "Use browser default" 체크 해제
 - Custom User-Agent에 `KingHacker/1.0` 입력 후 새로고침
+<img width="798" height="507" alt="image" src="https://github.com/user-attachments/assets/0f5ec9ef-6ec3-4d56-b540-c5c33804a378" />
 
 또는 curl로 직접 요청:
 
@@ -75,6 +78,8 @@ curl -H "User-Agent: KingHacker/1.0" http://localhost:5000/
 ```
 
 **🏁 FLAG**
+<img width="750" height="609" alt="image" src="https://github.com/user-attachments/assets/644dbef0-eff5-48e9-ac2b-99bbd27d6f58" />
+
 ```
 FLAG{CURL_UA_BYPASS_SUCCESS}
 ```
